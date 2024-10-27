@@ -13,9 +13,6 @@
 # Not optimal
 def set_color(ctrlList=None, color=None):
 
-    #Witness for tests
-    print("ctrlList: {} / color: {}".format(ctrlList, color))
-
     # Color dictionary
     colors = {"0" : 1,
               "1" : 4,
@@ -28,21 +25,21 @@ def set_color(ctrlList=None, color=None):
               "8" : 16,
     }
 
-
     for ctrlName in ctrlList:
 
-        #Witness for tests
-        print("ctrlName: {}\ncolor: {}".format(ctrlName, color))
-
-        #Default 
+        #default color set if None
         if color is None or color not in range(len(colors)): color = 0
         else: pass #for future action needed
-
-        #mc.setAttr(ctrlName + 'Shape.overrideEnabled', colors[str(color)])
-        print("Result: {}".format(colors[str(color)]))
+        
+        #set color
+        mc.setAttr(ctrlName + 'Shape.overrideEnabled', colors[str(color)])
 
 # EXAMPLE
 # set_color(['circle','circle1'], 8)
 
 # TEST
-set_color(['circle','circle1'], 8)
+#set_color(['circle','circle1'], 9)
+#set_color(['circle','circle1'], -5)
+#set_color(['circle','circle1'], 0)
+#set_color(['circle','circle1'], None)
+#set_color(['circle','circle1'], 3)
