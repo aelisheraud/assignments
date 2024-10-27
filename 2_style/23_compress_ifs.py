@@ -5,37 +5,44 @@
 # email   = contact@alexanderrichtertd.com
 #**********************************************************************************
 
+# student: Aélis Héraud
+# cohort: October 2024
 
-# COMMENT --------------------------------------------------
+
+# SET COLOR FUNCTION --------------------------------------------------
 # Not optimal
 def set_color(ctrlList=None, color=None):
 
+    #Witness for tests
+    print("ctrlList: {} / color: {}".format(ctrlList, color))
+
+    # Color dictionary
+    colors = {"0" : 1,
+              "1" : 4,
+              "2" : 13,
+              "3" : 25,
+              "4" : 17,
+              "5" : 17,
+              "6" : 15,
+              "7" : 6,
+              "8" : 16,
+    }
+
+
     for ctrlName in ctrlList:
-        try:
-            mc.setAttr(ctrlName + 'Shape.overrideEnabled', 1)
-        except:
-            pass
 
-        try:
-            if color == 1:
-                mc.setAttr(ctrlName + 'Shape.overrideColor', 4)
-            elif color == 2:
-                mc.setAttr(ctrlName + 'Shape.overrideColor', 13)
-            elif color == 3:
-                mc.setAttr(ctrlName + 'Shape.overrideColor', 25)
-            elif color == 4:
-                mc.setAttr(ctrlName + 'Shape.overrideColor', 17)
-            elif color == 5:
-                mc.setAttr(ctrlName + 'Shape.overrideColor', 17)
-            elif color == 6:
-                mc.setAttr(ctrlName + 'Shape.overrideColor', 15)
-            elif color == 7:
-                mc.setAttr(ctrlName + 'Shape.overrideColor', 6)
-            elif color == 8:
-                mc.setAttr(ctrlName + 'Shape.overrideColor', 16)
-        except:
-            pass
+        #Witness for tests
+        print("ctrlName: {}\ncolor: {}".format(ctrlName, color))
 
+        #Default 
+        if color is None or color not in range(len(colors)): color = 0
+        else: pass #for future action needed
+
+        #mc.setAttr(ctrlName + 'Shape.overrideEnabled', colors[str(color)])
+        print("Result: {}".format(colors[str(color)]))
 
 # EXAMPLE
 # set_color(['circle','circle1'], 8)
+
+# TEST
+set_color(['circle','circle1'], 8)
