@@ -1,3 +1,17 @@
+# STYLE ***************************************************************************
+# content = assignment (Python Advanced)
+#
+# date    = 2022-01-07
+# email   = contact@alexanderrichtertd.com
+#**********************************************************************************
+
+# student: Aélis Héraud
+# cohort: October 2024
+
+
+#################################################################################
+# IMPORTS
+
 # Python Packages
 import os
 import re
