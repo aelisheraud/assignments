@@ -25,7 +25,7 @@ Update the style of this module: arload.py
 Use what you have learned.
 
 
-
+DONE
 
 
 #************************************************************************************
@@ -37,7 +37,7 @@ It should be easy for everyone to pick it up and modify it.
 
 
 
-
+DONE
 
 #************************************************************************************
 # 23. LESS loops/ifs/calls
