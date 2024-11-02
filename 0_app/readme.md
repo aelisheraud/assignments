@@ -43,7 +43,14 @@ In essence, this tool allow user to have more options to configure their most co
 - ... *(to be continued - WIP)*
 
 ### **SETTINGS**
-- *(WIP)*
+
+Settings will be apply from 2 types of locations:
+
+- The Nuke native Preferences Panel: User will find all the general settings from the tool, like the local path for the macros python file, the exception/banning rules/nodes/keys, the import/export user profile, all the different settings affecting each shortcut the same way, the documentation and a summary of all the command/shortcut/nodes already assigned.
+
+- The contextual Node Settings panel : a small floating panel accessible from the node graph using one specific hotkey (the tilde for instance) in which the user will be able to set all the different behavior of the alloted Fkeys and NavKeys for the current selected node.
+
+*(WIP)*
 
 
 ### **POTENTIAL FUTURE FEATURES**
