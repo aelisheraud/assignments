@@ -3,10 +3,10 @@
 # aelis_heraud@hotmail.com
 
 # version: 0.1.0
-# date: 01 November 2024
+# last update: 09 November 2024
 
 #version = "0.1.0"
-#releaseDate = "November 1st 2024"
+#releaseDate = "January 1st 2025"
 
 
 # importing module -----------------
