@@ -28,68 +28,80 @@ CUBE CLASS
 
 """
 
-class Cube:
+
+class Object:
+     
    def __init__(self, name):
-        self.name = name
-        self.x = 1
-        self.y = 1
-        self.z = 1
-        self.r = 255
-        self.g = 255
-        self.b = 255
+      self.name = name
+      self.x = 1
+      self.y = 1
+      self.z = 1
+      self.r = 255
+      self.g = 255
+      self.b = 255
 
-        print("Initiating Cube Object name '{}':\nx = {}, y = {}, z = {}\nr = {}, g = {}, b = {}\n".format(self.name, self.x, self.y, self.z, self.r, self.g, self.b))
+      print("Initiating Cube Object name '{}':\nx = {}, y = {}, z = {}\nr = {}, g = {}, b = {}\n".format(self.name, self.x, self.y, self.z, self.r, self.g, self.b))
 
-   
+
    def translate(self, x, y, z):
-        ''' Fake calculation for translating xyz
-        '''
-        self.x += x
-        self.y += y
-        self.z += z
+      ''' Fake calculation for translating xyz
+      '''
+      self.x += x
+      self.y += y
+      self.z += z
 
-        print("Translating Cube object named '{}' by x = {}, y = {}, z = {}.".format(self.name, x, y, z))
-        print("New data for Cube object '{}': x = {}, y = {}, z = {}.".format(self.name, self.x, self.y, self.z))
+      print("Translating Cube object named '{}' by x = {}, y = {}, z = {}.".format(self.name, x, y, z))
+      print("New data for Cube object '{}': x = {}, y = {}, z = {}.".format(self.name, self.x, self.y, self.z))
    
    
    def rotate(self, x, y, z):
-        ''' Fake calculation for rotating xyz
-        '''
-        self.x += x
-        self.y += y
-        self.z += z
+      ''' Fake calculation for rotating xyz
+      '''
+      self.x += x
+      self.y += y
+      self.z += z
 
-        print("Rotating Cube object named '{}' by x = {}, y = {}, z = {}.".format(self.name, x, y, z))
-        print("New data for Cube object '{}': x = {}, y = {}, z = {}.".format(self.name, self.x, self.y, self.z))
+      print("Rotating Cube object named '{}' by x = {}, y = {}, z = {}.".format(self.name, x, y, z))
+      print("New data for Cube object '{}': x = {}, y = {}, z = {}.".format(self.name, self.x, self.y, self.z))
    
    
    def scale(self, x, y, z):
-        ''' Fake calculation for scaling xyz
-        '''
-        self.x *= x
-        self.y *= y
-        self.z *= z
+      ''' Fake calculation for scaling xyz
+      '''
+      self.x *= x
+      self.y *= y
+      self.z *= z
 
-        print("Scaling Cube object named '{}' by x = {}, y = {}, z = {}.".format(self.name, x, y, z))
-        print("New data for Cube object '{}': x = {}, y = {}, z = {}.".format(self.name, self.x, self.y, self.z))
-    
+      print("Scaling Cube object named '{}' by x = {}, y = {}, z = {}.".format(self.name, x, y, z))
+      print("New data for Cube object '{}': x = {}, y = {}, z = {}.".format(self.name, self.x, self.y, self.z))
+
+
+
+
+
+
+class Cube(Object):
+   def __init__(self, name):
+      super(Cube, self).__init__(name)
+
+   
    def color(self, r, g, b):
-        self.r = r
-        self.g = g
-        self.b = b
+      self.r = r
+      self.g = g
+      self.b = b
 
-        print("Changing color on Cube object named '{}' to r = {}, g = {}, b = {}.".format(self.name, r, g, b))
+      print("Changing color on Cube object named '{}' to r = {}, g = {}, b = {}.".format(self.name, r, g, b))
         
    
    def print_status(self):
-        print("The variables of the Cube object named '{}' are the followings:".format(self.name))
-        print("Position:\n\tx = {}\n\ty = {}\n\tz = {}".format(self.x, self.y, self.z))
-        print("RGB color:\n\tr = {}\n\tg = {}\n\tb = {}\n".format(self.r, self.g, self.b))
+      print("The variables of the Cube object named '{}' are the followings:".format(self.name))
+      print("Position:\n\tx = {}\n\ty = {}\n\tz = {}".format(self.x, self.y, self.z))
+      print("RGB color:\n\tr = {}\n\tg = {}\n\tb = {}\n".format(self.r, self.g, self.b))
    
 
    def update_transform(self, ttype, value=[0, 0, 0]):
-        move_types = ['translate', 'rotate', 'scale']
-        if ttype in move_types: eval("self.{}({}, {}, {})".format(ttype, value[0], value[1], value[2]))
+      move_types = ['translate', 'rotate', 'scale']
+      if ttype in move_types: eval("self.{}({}, {}, {})".format(ttype, value[0], value[1], value[2]))
 
 
     
