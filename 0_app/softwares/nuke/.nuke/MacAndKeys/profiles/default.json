@@ -1,0 +1,172 @@
+[
+    {
+        "node_class": "Merge2",
+        "node_rules": [
+            {
+                "rule_name": "Merge2_F1",
+                "rule_trigger": "F1",
+                "rule_type": "knob",
+                "rule_spec_values": true,
+                "rule_cycle_type": "toggle",
+                "rule_cycle_limit": "2",
+                "isActive": true,
+                "rule_cycles": {
+                    "rule_cycle_id": "Merge2_F1_01",
+                    "rule_cycle_knob": "operation",
+                    "rule_cycle_knob_values": ["over", "under"]
+                }
+                
+            },
+            {
+                "rule_name": "Merge2_F2",
+                "rule_trigger": "F2",
+                "rule_type": "knob",
+                "rule_spec_values": true,
+                "rule_cycle_type": "toggle",
+                "rule_cycle_limit": "2",
+                "isActive": true,
+                "rule_cycles": {
+                    "rule_cycle_id": "Merge2_F2_01",
+                    "rule_cycle_knob": "operation",
+                    "rule_cycle_knob_values": ["plus", "minus"]
+                }
+                
+            },
+            {
+                "rule_name": "Merge2_F3",
+                "rule_trigger": "F3",
+                "rule_type": "knob",
+                "rule_spec_values": true,
+                "rule_cycle_type": "toggle",
+                "rule_cycle_limit": "2",
+                "isActive": true,
+                "rule_cycles": {
+                    "rule_cycle_id": "Merge2_F3_01",
+                    "rule_cycle_knob": "operation",
+                    "rule_cycle_knob_values": ["stencil", "mask"]
+                }
+                
+            },
+            {
+                "rule_name": "Merge2_F4",
+                "rule_trigger": "F4",
+                "rule_type": "knob",
+                "rule_spec_values": true,
+                "rule_cycle_type": "cycle",
+                "rule_cycle_limit": "0",
+                "isActive": true,
+                "rule_cycles": {
+                    "rule_cycle_id": "Merge2_F4_01",
+                    "rule_cycle_knob": "operation",
+                    "rule_cycle_knob_values": ["multiply", "divide", "min", "max"]
+                }
+                
+            },
+            {
+                "rule_name": "Merge2_F5",
+                "rule_trigger": "F5",
+                "rule_type": "knob",
+                "rule_spec_values": true,
+                "rule_cycle_type": "cycle",
+                "rule_cycle_limit": "0",
+                "isActive": true,
+                "rule_cycles": {
+                    "rule_cycle_id": "Merge2_F5_01",
+                    "rule_cycle_knob": "label",
+                    "rule_cycle_knob_values": ["operation: [value operation]", ""]
+                }
+                
+            },
+            {
+                "rule_name": "Merge2_F6",
+                "rule_trigger": "F6",
+                "rule_type": "knob",
+                "rule_spec_values": true,
+                "rule_cycle_type": "command",
+                "rule_cycle_limit": "1",
+                "isActive": true,
+                "rule_cycles": {
+                    "rule_cycle_id": "Merge2_F6_01",
+                    "rule_cycle_knob": "tile_color",
+                    "rule_cycle_knob_values": ["#55555"]
+                }
+                
+            },
+            {
+                "rule_name": "Merge2_F7",
+                "rule_trigger": "F7",
+                "rule_type": "knob",
+                "rule_spec_values": false,
+                "rule_cycle_type": "cycle",
+                "rule_cycle_limit": "0",
+                "isActive": true,
+                "rule_cycles": {
+                    "rule_cycle_id": "Merge2_F7_01",
+                    "rule_cycle_knob": "bbox",
+                    "rule_cycle_knob_values": []
+                }
+                
+            },
+            {
+                "rule_name": "Merge2_F8",
+                "rule_trigger": "F8",
+                "rule_type": "knob",
+                "rule_spec_values": true,
+                "rule_cycle_type": "cycle",
+                "rule_cycle_limit": "0",
+                "isActive": false,
+                "rule_cycles": {
+                    "rule_cycle_id": "Merge2_F2_01",
+                    "rule_cycle_knob": "label",
+                    "rule_cycle_knob_values": ["label 1", "label 2", "label 3"]
+                }
+                
+            },
+            {
+                "rule_name": "Merge2_F10",
+                "rule_trigger": "F10",
+                "rule_type": "knob",
+                "rule_spec_values": false,
+                "rule_cycle_type": "cycle",
+                "rule_cycle_limit": "0",
+                "isActive": false,
+                "rule_cycles": {
+                    "rule_cycle_id": "",
+                    "rule_cycle_knob": "",
+                    "rule_cycle_knob_values": []
+                }
+                
+            },
+            {
+                "rule_name": "Merge2_F11",
+                "rule_trigger": "F11",
+                "rule_type": "knob",
+                "rule_spec_values": false,
+                "rule_cycle_type": "cycle",
+                "rule_cycle_limit": "0",
+                "isActive": false,
+                "rule_cycles": {
+                    "rule_cycle_id": "",
+                    "rule_cycle_knob": "",
+                    "rule_cycle_knob_values": []
+                }
+                
+            },
+            {
+                "rule_name": "Merge2_F12",
+                "rule_trigger": "F12",
+                "rule_type": "knob",
+                "rule_spec_values": false,
+                "rule_cycle_type": "cycle",
+                "rule_cycle_limit": "0",
+                "isActive": false,
+                "rule_cycles": {
+                    "rule_cycle_id": "",
+                    "rule_cycle_knob": "",
+                    "rule_cycle_knob_values": []
+                }
+                
+            }
+        ]
+    }
+]
